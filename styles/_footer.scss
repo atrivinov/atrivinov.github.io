@@ -1,0 +1,72 @@
+footer
+{
+    text-align: center;
+    h4 
+    {
+        font-family: 'IBM Plex Mono', monospace; 
+        padding-top: 24px;
+    }
+    .social
+    {
+        padding-top: 24px;
+        padding-bottom: 30px;
+        nav
+        {
+            ul 
+            {
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: center;
+                li 
+                {
+                    padding: 0px 5%;
+                    a 
+                    {
+                        text-decoration: none;
+                        cursor: pointer;
+                        i 
+                        {
+                            color: $font-color;
+                        }
+                    }
+                    a:hover 
+                    {
+                        i 
+                        {
+                            color: $cyan-btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    footer 
+    {
+        display: flex;
+        justify-content: center;
+        .social
+        {
+            padding: 24px 10%;
+            nav 
+            {
+                ul 
+                {
+                    li 
+                    {
+                        padding: 0px 10%;
+                    }
+                }
+            }
+        }
+        h4 
+        {
+            padding: 24px 10%;
+        }
+    }
+}
+
